@@ -1,24 +1,16 @@
-# README
+# 概要
+- 羊のline bot
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# 使用技術
 
-Things you may want to cover:
+- 以下versionなどはGemfile参照
 
-* Ruby version
+## backend
 
-* System dependencies
+- Ruby on Rails 
 
-* Configuration
 
-* Database creation
+## gem
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- railsのデフォルト
+- line-bot-api(line bot SDK for Ruby) [https://github.com/line/line-bot-sdk-ruby](https://github.com/line/line-bot-sdk-ruby)
