@@ -1,4 +1,6 @@
+
 require 'line/bot'  # gem 'line-bot-api'
+require_relative '../domain/EventProcessor'
 
 class WebhookController < ApplicationController
     
@@ -25,14 +27,7 @@ class WebhookController < ApplicationController
         events.each do |event|
         case event
             when Line::Bot::Event::Message
-                case event.type
-                when Line::Bot::Event::MessageType::Text
-                    message = {
-                        type: 'text',
-                        text: event.message['text']
-                    }
-                    client.reply_message(event['replyToken'], message)
-                end
+                EventProcessor::MessageEventProcessor.process(client, event)
             end
         end
 

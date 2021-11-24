@@ -1,0 +1,2 @@
+require 'EventProcessor/MessageEventProcessor'
+require 'EventProcessor/FollowEventProcessor'
