@@ -2,7 +2,7 @@
 require 'line/bot'  # gem 'line-bot-api'
 
 module EventProcessor
-    module MessageEventProcessor
+    class MessageEventProcessor
 
         def process(client, event)
             case event.type
@@ -14,6 +14,6 @@ module EventProcessor
                 client.reply_message(event['replyToken'], message)
             end
         end
-        
+
     end
 end
