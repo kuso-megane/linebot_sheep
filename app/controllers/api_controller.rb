@@ -2,7 +2,7 @@
 require 'line/bot'  # gem 'line-bot-api'
 require_relative '../domain/EventProcessor'
 
-class WebhookController < ApplicationController
+class ApiController < ApplicationController
     
 
     protect_from_forgery except: [:callback] # CSRF対策無効化
