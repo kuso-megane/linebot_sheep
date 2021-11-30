@@ -1,6 +1,25 @@
 # 概要
 - 羊のline bot
 
+# 環境構築
+## rails環境
+1. ruby, railsをinstall (versionはGemfile参照)
+1. コードをクローン
+1. Gemfileと同階層で```bundle```
+1. dbをmigration
+
+## その他
+
+### 環境変数管理
+1. direnvを導入(動作確認済みは```version 2.29.0```)
+1. shellのprofile, もしくはrcファイルに以下を記入
+```
+export EDITOR=お使いのエディタ
+eval "$(direnv hook zsh)"
+```
+1. ```.envrc```と同階層で```direnv allow```を実行
+
+
 # 使用技術
 
 - 以下versionなどはGemfile参照

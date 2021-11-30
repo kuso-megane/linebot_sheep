@@ -63,3 +63,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 #line-bot-api
 gem 'line-bot-api'
+
+gem 'openssl'
