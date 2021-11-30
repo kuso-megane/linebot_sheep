@@ -1,7 +1,7 @@
 require 'openssl'
 
 
-module EventTestInterface
+module EventTestIF
 
     #@return {Hash}
     def requestHeader
