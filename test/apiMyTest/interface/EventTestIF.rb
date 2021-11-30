@@ -14,7 +14,12 @@ module EventTestIF
         {destination: "test_dest", events: events}
     end
 
+    #@return ruby object like json object [{type: xxx, ,,,,}]
+    def events (type, others)
+        raise NotImplementedError.new("#{self.class}##{__method__} が実装されていません")
+    end
 
+    #main
     def execute 
         raise NotImplementedError.new("#{self.class}##{__method__} が実装されていません")
     end
