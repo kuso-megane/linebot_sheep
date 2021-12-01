@@ -30,7 +30,8 @@ class ApiController < ApplicationController
         events.each do |event|
         case event
             when Line::Bot::Event::Message
-                EventProcessor::MessageEventProcessor.process(client, event)
+                processor = EventProcessor::MessageEventProcessor.new
+                processor.process(client, event)
             end
         end
 
